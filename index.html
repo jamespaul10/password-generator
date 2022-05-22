@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/545a0ab404.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="result-container">
+        <span id="result"></span>
+        <button type="button" name="button" id="clipboard" class="btn"><i class="far fa-clipboard"></i></button>
+
+      </div>
+      <!-- TODO: fa-solid -->
+
+        <div class="setting">
+          <label for="length">Password length</label>
+          <input type="number" min="4" max="20" id="length" value="20">
+        </div>
+        <div class="setting">
+          <label for="uppercase">include uppercase letters</label>
+          <input type="checkbox" id="uppercase" checked>
+        </div>
+        <div class="setting">
+          <label for="lowercase">include lowercase letters</label>
+          <input type="checkbox" id="lowercase" checked>
+        </div>
+        <div class="setting">
+          <label for="number">include number</label>
+          <input type="checkbox" id="number" checked>
+        </div>
+        <div class="setting">
+          <label for="symbols">include symbols</label>
+          <input type="checkbox" id="symbols" checked>
+        </div>
+        <button type="button" name="button" class="btn btn-lg" id="Generate">Generate Password</button>
+
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
